@@ -1,7 +1,16 @@
-function takeANumber(line, name){
+/*function takeANumber(line, name){
   line.push(name);
   return `Welcome, ${name}. You are number ` + (line.length) + ' in line.';
+}*/
+
+var totalCustomers = 0;
+
+function takeANumber(line){
+  totalCustomers++;
+  line.push(totalCustomers);
+  return `You are number ${totalCustomers}`;
 }
+
 
 function nowServing(line){
   if (line.length === 0)
@@ -21,3 +30,4 @@ function currentLine(line){
   }
   return lineToString;
 }
+
