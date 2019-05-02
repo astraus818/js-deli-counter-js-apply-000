@@ -2,6 +2,12 @@
   line.push(name);
   return `Welcome, ${name}. You are number ` + (line.length) + ' in line.';
 }*/
+var line = []
+takeANumber(line)
+takeANumber(line)
+nowServing(line)
+nowServing(line)
+takeANumber(line)
 
 var totalCustomers = 0;
 
